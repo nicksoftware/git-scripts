@@ -49,6 +49,13 @@ fi
 
 # Define the base branch to create the new branch from
 base_branch="production"
+
+# Check if "prod" branch exists
+if ! git show-ref --quiet refs/heads/"$base_branch"; then
+    echo "Error: The '$base_branch' branch does not exist in the repository."
+    exit 1
+fi
+
 branch_name="$1"
 
 # Determine the suffix based on the type flag
