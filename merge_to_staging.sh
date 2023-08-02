@@ -30,11 +30,11 @@ done
 current_branch=$(git symbolic-ref --short HEAD)
 
 # Define the staging branch name
-staging_branch="staging"
+staging_branch="staging-nick"
 
 # Check if the staging branch exists
 if ! git show-ref --quiet refs/heads/"$staging_branch"; then
-    echo "Error: The 'staging' branch does not exist in the repository."
+    echo "Error: The '$staging_branch' branch does not exist in the repository."
     exit 1
 fi
 
