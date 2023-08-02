@@ -3,7 +3,7 @@
 # Function to print script usage
 function print_usage {
     echo "Usage: $0 -t <type_flag> <branch_name>"
-    echo "    -t <type_flag>: Type flag indicating the suffix to use (u, n, f)"
+    echo "    -t <type_flag>: Type flag indicating the suffix to use (u :update , n : new feature , f : fix)"
     echo "    <branch_name>: The name of the new branch to create"
     exit 1
 }
