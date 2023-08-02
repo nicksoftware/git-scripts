@@ -48,7 +48,7 @@ if [ -z "$1" ]; then
 fi
 
 # Define the base branch to create the new branch from
-base_branch="prod"
+base_branch="production"
 
 # Check if "prod" branch exists
 if ! git show-ref --quiet refs/heads/"$base_branch"; then
