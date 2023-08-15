@@ -5,9 +5,22 @@ This contains the following scripts that i use to improve my dev speed
 ## The merge_to_staging.sh script
 
 This script allows me to take my current changes on my branch and merge them to a staging branch this script allows you to set the following flags
-`-f` (force merge)
-`-p` (push to remote after merge)
-`-n` staging (-n should be followed by the name of the staging branch you want to merge to)
+
+- `-f` (force merge)
+- `-p` (push to remote after merge)
+- `-n` staging (-n should be followed by the name of the staging branch you want to merge to)
+
+example:
+
+```bash
+#This will force merge to staging-nick then push to staging
+/merge_to_staging.sh -f -p -n staging-nick
+```
+
+```bash
+#this will merge to staging and push to remote
+/merge_to_staging.sh -p
+```
 
 ## The new_branch.sh script
 
